@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>I knew it!!!</title>
+
+    <style>
+      @keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-slideIn {
+  animation: slideIn 0.5s ease-out;
+}
+
+    </style>
+
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <div
+      class="flex flex-col justify-center items-center h-screen bg-pink-50 overflow-hidden"
+    >
+      <div
+        class="tenor-gif-embed h-1/4 w-1/2 hover:none"
+        data-postid="2871482820979272488"
+        data-share-method="host"
+        data-aspect-ratio="1.28351"
+        data-width="100%"
+      >
+        <a
+          href="https://tenor.com/view/mochi-pet-mochi-cat-cute-squiddy-gif-2871482820979272488"
+          >Mochi Pet GIF</a
+        >from <a href="https://tenor.com/search/mochi-gifs">Mochi GIFs</a>
+      </div>
+      <script
+        type="text/javascript"
+        async
+        src="https://tenor.com/embed.js"
+      ></script>
+      <h1 class="text-2xl font-extrabold my-8 text-red-500">I knew It!!!!!</h1>
+      <p class="text-center">I love you baby kooo, kahit di tayo maka date bawi nalang... <br> I miss you so much super duper, amwaaaa! <br>Happy Valentaine's Day milove!</p>
+    </div>
+  </body>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+  // Create a surprise toast notification
+  const toast = document.createElement("div");
+  toast.className =
+    "fixed bottom-5 right-5 bg-pink-100 shadow-lg rounded-lg px-4 py-3 flex items-center space-x-3 animate-slideIn cursor-pointer border border-pink-300";
+  toast.innerHTML = `
+    <span class="text-pink-600 font-bold">💌 A Secret Valentine’s Gift! </span>
+    <span class="text-gray-700">Tap to open ❤️</span>
+  `;
+
+  // Append toast to the body
+  document.body.appendChild(toast);
+
+  // Redirect after 4 seconds (delay for suspense)
+  setTimeout(() => {
+    window.location.href = "https://essel.vercel.app/";
+  }, 8000);
+
+  // Click to redirect immediately
+  toast.addEventListener("click", () => {
+    window.location.href = "https://essel.vercel.app/";
+  });
+});
+
+  </script>
+</html>
